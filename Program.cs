@@ -37,7 +37,7 @@ namespace Zoolandia.Animals
             Pet3.weight = 1;
             Pet3.color = "white, black, orange, etc...";
 
-            Console.WriteLine($"I have two dogs named {Pet1.name} and {Pet2.name}. Their species name is {Animals.Dog.species}");
+            Console.WriteLine($"I have two dogs named {Pet1.name} and {Pet2.name}. Their species name is {Pet1.species}");
 
         }
     }
