@@ -9,5 +9,11 @@ namespace Zoolandia.Animals
             var Fish = new Animals();
             Fish.species = "Carassius auratus";
         }
+
+        public override void Sound()
+        {
+            Console.WriteLine("bluuurp");
+        }
+
     }
 }

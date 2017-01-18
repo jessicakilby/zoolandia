@@ -9,5 +9,11 @@ namespace Zoolandia.Animals
             var Rabbit = new Animals();
             Rabbit.species = "Oryctolagus cuniculus";
         }
+
+        public override void Sound()
+        {
+            Console.WriteLine("Fffftttfffttt");
+        }
+
     }
 }
