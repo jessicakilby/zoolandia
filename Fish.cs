@@ -13,14 +13,18 @@ namespace Zoolandia.Animals
         {
            base.Species = species;
         }
-        public void MyFish()
+        public void MyFish(string name)
         {
-            this.Name = "Koi";
+            this.Name = name;
         }
 
         public override void Sound()
         {
             Console.WriteLine("bluuurp");
+        }
+        public Fish(int weight)
+        {
+            this.Weight = weight;
         }
 
     }

@@ -17,6 +17,8 @@ namespace Zoolandia.Animals
         {
             Console.WriteLine("Animal is now sleeping");
         }
-    
+        public string StringOfWords { get; set; }
+        public int SomeNumber { get; set; }
+
     }
 }

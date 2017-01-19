@@ -14,6 +14,20 @@ namespace Zoolandia.Animals
         {
            base.Species = species;
         }
+        // public Dog(string name)
+        // {
+        //     this.Name = name;
+        // }
+        public Dog(int weight)
+        {
+            this.Weight = weight;
+        }
+
+        public Dog(string words, int number)
+        {
+            this.StringOfWords = words;
+            this.SomeNumber = number;
+        }
         
 
     }
