@@ -7,8 +7,14 @@ namespace Zoolandia.Animals
         public Dog()
         {
            var Dog = new Animals();
-           Dog.species = "Canis lupus";
+        //    Dog.Species = "Canis lupus";
+            this.Species = "Canis lupus";
         }
+        public Dog(string species)
+        {
+           base.Species = species;
+        }
+        
 
     }
 }
