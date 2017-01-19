@@ -16,14 +16,14 @@ namespace Zoolandia.Animals
             Pet1.Sound();
 
             var Pet2 = new Dog();
-            // Pet2.Name = "Finn";
+            Pet2.Name = "Finn";
             Pet2.Height = 22;
             Pet2.Weight = 50;
             Pet2.Color = "white and black";
             Pet2.Sound();
 
             var Pet3 = new Rabbit();
-            // Pet3.Name = "Pico";
+            Pet3.Name = "Pico";
             Pet3.Height = 8;
             Pet3.Weight = 18;
             Pet3.Color = "white and black";
@@ -52,6 +52,20 @@ namespace Zoolandia.Animals
             Fish FishInstance = new Fish();
             Console.WriteLine(FishInstance.Species);
 
+            // Dog girlName = new Dog("I have one female dog, Gwen is her name");
+            // Console.WriteLine(girlName.Name);
+            // Rabbit girlRabbitName = new Rabbit("The girl rabbit is Eleanor");
+            // Console.WriteLine(girlRabbitName.Name);
+
+            Dog FinnWeight = new Dog(49);
+            Console.WriteLine("Finn weighs: " + FinnWeight.Weight + " lbs.");
+            Rabbit EleanorWeight = new Rabbit(15);
+            Console.WriteLine("Eleanor wighs: " + EleanorWeight.Weight + " lbs.");
+            Fish FishWeight = new Fish(1);
+            Console.WriteLine("The fish weigh less than "  + FinnWeight.Weight + " lbs.");
+
+            Dog StringAndInt = new Dog("Here they are!", 10);
+            Console.WriteLine("These words are for my dogs. "+ StringAndInt.StringOfWords + " and here is a number: " + StringAndInt.SomeNumber);
         }
     }
 }
