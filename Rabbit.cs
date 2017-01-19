@@ -7,13 +7,21 @@ namespace Zoolandia.Animals
         public Rabbit()
         {
             var Rabbit = new Animals();
-            Rabbit.species = "Oryctolagus cuniculus";
+            this.Species = "Oryctolagus cuniculus";
         }
-
+        public Rabbit(string species)
+        {
+           base.Species = species;
+        }
+        public void MyRabbit()
+        {
+            this.Name = "Pico";
+        }
         public override void Sound()
         {
             Console.WriteLine("Fffftttfffttt");
         }
+        
 
     }
 }
