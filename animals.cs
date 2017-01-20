@@ -5,7 +5,7 @@ namespace Zoolandia.Animals
     public class Animals : PartOfTheWorld
     {
         public string Diet { get; set; }
-        public string Name { get; set;}
+        public string Name { get; set; }
         public string Species { get; set; }
         public int Height { get; set; }
         public int Weight { get; set; }
@@ -14,12 +14,14 @@ namespace Zoolandia.Animals
         {
             Console.WriteLine("Bark");
         }
-        public static void sleep ()
+        public static void sleep()
         {
             Console.WriteLine("Animal is now sleeping");
         }
         public string StringOfWords { get; set; }
         public int SomeNumber { get; set; }
+
+        
 
     }
 }

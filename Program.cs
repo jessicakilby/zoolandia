@@ -97,6 +97,9 @@ namespace Zoolandia.Animals
             newTiger.SpecificToMeatEaters();
             Eagle newEagle = new Eagle();
             newEagle.SpecificToMeatEaters();
+
+            Bear BearPoop = new Bear();
+            BearPoop.EatingFood();
             
         }
     }
