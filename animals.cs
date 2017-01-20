@@ -4,6 +4,7 @@ namespace Zoolandia.Animals
 {
     public class Animals
     {
+        public string Diet { get; set; }
         public string Name { get; set;}
         public string Species { get; set; }
         public int Height { get; set; }

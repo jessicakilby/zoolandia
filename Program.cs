@@ -45,27 +45,59 @@ namespace Zoolandia.Animals
 
             Console.WriteLine($"I have two dogs named {Pet1.Name} and {Pet2.Name}. I have two rabbits named {Pet3.Name} and {Pet4.Name}.");
             
-            Dog dogInstance = new Dog();
-            Console.WriteLine(dogInstance.Species);
-            Rabbit rabbitInstance = new Rabbit();
-            Console.WriteLine(rabbitInstance.Species);
-            Fish FishInstance = new Fish();
-            Console.WriteLine(FishInstance.Species);
+            // Dog dogInstance = new Dog();
+            // Console.WriteLine(dogInstance.Species);
+            // Rabbit rabbitInstance = new Rabbit();
+            // Console.WriteLine(rabbitInstance.Species);
+            // Fish FishInstance = new Fish();
+            // Console.WriteLine(FishInstance.Species);
 
             // Dog girlName = new Dog("I have one female dog, Gwen is her name");
             // Console.WriteLine(girlName.Name);
             // Rabbit girlRabbitName = new Rabbit("The girl rabbit is Eleanor");
             // Console.WriteLine(girlRabbitName.Name);
 
-            Dog FinnWeight = new Dog(49);
-            Console.WriteLine("Finn weighs: " + FinnWeight.Weight + " lbs.");
-            Rabbit EleanorWeight = new Rabbit(15);
-            Console.WriteLine("Eleanor wighs: " + EleanorWeight.Weight + " lbs.");
-            Fish FishWeight = new Fish(1);
-            Console.WriteLine("The fish weigh less than "  + FinnWeight.Weight + " lbs.");
+            // Dog FinnWeight = new Dog(49);
+            // Console.WriteLine("Finn weighs: " + FinnWeight.Weight + " lbs.");
+            // Rabbit EleanorWeight = new Rabbit(15);
+            // Console.WriteLine("Eleanor wighs: " + EleanorWeight.Weight + " lbs.");
+            // Fish FishWeight = new Fish(1);
+            // Console.WriteLine("The fish weigh less than "  + FinnWeight.Weight + " lbs.");
 
-            Dog StringAndInt = new Dog("Here they are!", 10);
-            Console.WriteLine("These words are for my dogs. "+ StringAndInt.StringOfWords + " and here is a number: " + StringAndInt.SomeNumber);
+            // Dog StringAndInt = new Dog("Here they are!", 10);
+            // Console.WriteLine("These words are for my dogs. "+ StringAndInt.StringOfWords + " and here is a number: " + StringAndInt.SomeNumber);
+
+            Bear WhatNoise = new Bear();
+            WhatNoise.Sound();
+            Eagle WhatNoise2 = new Eagle();
+            WhatNoise2.Sound();
+            Elk WhatNoise3 = new Elk();
+            WhatNoise3.Sound();
+            Horse WhatNoise4 = new Horse();
+            WhatNoise4.Sound();
+            Lion WhatNoise5 = new Lion();
+            WhatNoise5.Sound();
+            Tiger WhatNoise6 = new Tiger();
+            WhatNoise6.Sound();
+
+            MeatEater newMeatEater = new MeatEater();
+            newMeatEater.SpecificToMeatEaters();
+            GrassEater newGrassEater = new GrassEater();
+            newGrassEater.SpecificToGrassEaters();
+
+            Bear newBear = new Bear();
+            newBear.SpecificToMeatEaters();
+            Elk newElk = new Elk();
+            newElk.SpecificToGrassEaters();
+            Horse newHorseOverride = new Horse();
+            newHorseOverride.SpecificToGrassEaters();
+            Lion newLion = new Lion();
+            newLion.SpecificToMeatEaters();
+            Tiger newTiger = new Tiger();
+            newTiger.SpecificToMeatEaters();
+            Eagle newEagle = new Eagle();
+            newEagle.SpecificToMeatEaters();
+            
         }
     }
 }
